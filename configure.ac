@@ -3,8 +3,8 @@ dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ([2.68])
 
 AC_INIT([JAGS-BERN],[1.1],[dominik.wabersich@gmail.com],[JAGS-BERN-MODULE])
-JAGS_MAJOR=3
-JAGS_MINOR=0
+JAGS_MAJOR=4
+JAGS_MINOR=2
 AC_SUBST(JAGS_MAJOR)
 AC_SUBST(JAGS_MINOR)
 
@@ -12,7 +12,7 @@ AC_CANONICAL_HOST
 AC_CONFIG_SRCDIR([src/distributions/DBern.cc])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([subdir-objects])
 
 dnl libtool and ltdl configuration
 LT_PREREQ(2.2.6)

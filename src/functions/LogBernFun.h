@@ -3,6 +3,7 @@
 
 #include <function/ScalarFunction.h>
 
+namespace jags {
 namespace bernoulli {
 
 class LogBernFun : public ScalarFunction 
@@ -14,6 +15,7 @@ class LogBernFun : public ScalarFunction
     double evaluate(std::vector<double const *> const &args) const;
 };
 
-}
+} // namespace bernoulli
+} // namespace jags
 
 #endif /* BERN_FUNC_H_ */

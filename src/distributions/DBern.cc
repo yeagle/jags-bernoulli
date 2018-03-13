@@ -11,6 +11,7 @@ using std::max;
 
 #define PROB(par) (*par[0])
 
+namespace jags {
 namespace bernoulli {
 
 DBern::DBern() : ScalarDist("dbern2", 1, DIST_PROPORTION)
@@ -52,4 +53,5 @@ bool DBern::isDiscreteValued(vector<bool> const &mask) const
     return true;
 }
 
-}
+} // namespace bernoulli
+} // namespace jags

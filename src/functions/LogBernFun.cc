@@ -10,6 +10,7 @@ using std::string;
 #define x(par) (*args[0])
 #define prob(par) (*args[1])
 
+namespace jags {
 namespace bernoulli {
 
 LogBernFun::LogBernFun() :ScalarFunction("logbern", 2)
@@ -32,4 +33,5 @@ double LogBernFun::evaluate(vector<double const *> const &args) const
   return d == 0 ? JAGS_NEGINF : log(d);
 }
 
-}
+} // namespace bernoulli
+} // namespace jags

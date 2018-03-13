@@ -1,7 +1,8 @@
-#include <Module.h> // JAGS module base class
+#include <module/Module.h> // JAGS module base class
 #include <distributions/DBern.h> // Bernoulli distribution class
 #include <functions/LogBernFun.h> // Bernoulli log function class
 
+namespace jags { // jags namespace
 namespace bernoulli { // module namespace
 
 class BERNModule : public Module { // module class
@@ -21,6 +22,7 @@ BERNModule::~BERNModule() {
   } // deletes instantiated distribution objects
 }
 
-}
+} // namespace bernoulli
+} // namespace jags
 
-bernoulli::BERNModule _bernoulli_module;
+jags::bernoulli::BERNModule _bernoulli_module;

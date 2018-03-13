@@ -2,6 +2,7 @@
 #define DBERN_H_
 #include <distribution/ScalarDist.h> // JAGS scalar distribution base class
 
+namespace jags {
 namespace bernoulli {
 
 class DBern : public ScalarDist // scalar distribution class
@@ -22,5 +23,6 @@ class DBern : public ScalarDist // scalar distribution class
     bool isDiscreteValued(std::vector<bool> const &mask) const;
 };
 
-}
+} // namespace bernoulli
+} // namespace jags
 #endif /* DBERN_H_ */
