@@ -128,7 +128,8 @@ Windows Compiling
   Rtools33.exe
 
   Change path in c:/mingw/msys/1.0/etc/fstab
-  to:       C:/Rtools/mingw_64 /mingw
+  to (for 32bit binaries):       C:/Rtools/mingw_32 /mingw
+  or to (for 64bit binaries):       C:/Rtools/mingw_64 /mingw
   to use Rtools compilers
 
 - --> Start msys, extract tarball in your home dir, 
