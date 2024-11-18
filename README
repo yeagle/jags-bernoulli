@@ -13,7 +13,7 @@ This is an example module, more details can be found in:
     A tutorial on adding custom distributions to JAGS (with a diffusion
     model example)
 
-Also note, that the tutorial is written for JAGS 3.3.0. This example has
+Also note, that the tutorial was written for JAGS 3.3.0. This example has
 been updated to work with JAGS 4.2.0.
 
 License
@@ -49,6 +49,12 @@ where JAGS is copied (i.e. installed), for example:
 .. code:: sh
 
   ./configure --prefix /usr && make && sudo make install
+
+Mac
+"""
+See additional instructions here: 
+
+https://github.com/kiante-fernandez/Rhddmjags/blob/main/jags_wiener_install.md
 
 Windows
 """""""
